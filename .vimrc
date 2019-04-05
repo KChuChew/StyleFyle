@@ -1,6 +1,6 @@
 " ~/.vimrc
 " Kevin Chu
-" I Dab Daily :]
+" :]
 
 set nocompatible
 set nu
