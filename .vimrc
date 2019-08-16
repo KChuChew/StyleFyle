@@ -1,6 +1,6 @@
 " ~/.vimrc
 " Kevin Chu
-" :]
+" I Dab Daily :]
 
 set nocompatible
 set nu
@@ -21,13 +21,16 @@ set nohlsearch
 set bs=2
 set bg=dark
 set pastetoggle=<F3>
-set tabstop=2
-set expandtab
-set shiftwidth=2
 
+
+"filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+au BufRead,BufNewFile *.{c,h,java,cpp,py,txt,rb} set tabstop=4
+au BufRead,BufNewFile *.{c,h,java,cpp,py,txt,rb} set shiftwidth=4
 au BufRead,BufNewFile *.{c,h,java,cpp,py,txt,rb} set expandtab
-au BufRead,BufNewFile *.{c,h,java,cpp,py,txt,rb} set shiftwidth=2
-au BufRead,BufNewFile *.{c,h,java,cpp,py,txt,rb} set tabstop=2
 
 au BufRead,BufNewFile *.s set noexpandtab
 au BufRead,BufNewFile *.s set shiftwidth=8
